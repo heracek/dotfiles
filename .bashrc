@@ -1,18 +1,20 @@
 . ~/bin/bash_colors.sh
 
 # Add paths that should have been there by default
-export PATH=${PATH}:/usr/local/bin
+export PATH=/usr/local/bin:/usr/local/share/python:${PATH}
 export PATH="~/bin:$PATH"
 export PATH="$PATH:~/.gem/ruby/1.8/bin"
+export PATH=$PATH:$HOME/.rvm/bin # Add RVM to PATH for scripting
 
 # Add postgres to the path
-export PATH=$PATH:/usr/local/pgsql/bin
-export PATH=$PATH:/Library/PostgreSQL/8.3/bin
+#export PATH=$PATH:/usr/local/pgsql/bin
+#export PATH=$PATH:/Library/PostgreSQL/8.3/bin
 
 # Unbreak broken, non-colored terminal
 export TERM='xterm-color'
 alias ls='ls -G'
 alias ll='ls -lG'
+alias la='ls -lGA'
 export LSCOLORS="ExGxBxDxCxEgEdxbxgxcxd"
 export GREP_OPTIONS="--color"
 
@@ -69,8 +71,9 @@ python_module_dir () {
 }
 
 # MacPorts Installer addition on 2010-04-21_at_09:59:50: adding an appropriate PATH variable for use with MacPorts.
-export PATH=/opt/local/bin:/opt/local/sbin:/opt/local/Library/Frameworks/Python.framework/Versions/2.6/bin:$PATH
+#export PATH=/opt/local/bin:/opt/local/sbin:/opt/local/Library/Frameworks/Python.framework/Versions/2.6/bin:$PATH
 # Finished adapting your PATH environment variable for use with MacPorts.
 
 source ~/bin/git-completion.bash
+source /usr/local/share/python/virtualenvwrapper.sh
 

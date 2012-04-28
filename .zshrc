@@ -19,6 +19,7 @@ export PATH=$PATH:/Library/PostgreSQL/8.3/bin
 export TERM='xterm-color'
 alias ls='ls -G'
 alias ll='ls -lG'
+alias la='ls -lGA'
 alias duh='du -csh'
 export LSCOLORS="ExGxBxDxCxEgEdxbxgxcxd"
 export GREP_OPTIONS="--color"
@@ -58,19 +59,19 @@ alias gx="gitx"
 alias gxa="gitx --all"
 function mcd() { mkdir -p $1 && cd $1 }
 alias :q="echo YOU FAIL"
-alias misc="cd /Volumes/misc"
+# alias misc="cd /Volumes/misc"
 function cdf() { cd *$1*/ } # stolen from @topfunky
-function das() {
-    cd ~/proj/destroyallsoftware.com/destroyallsoftware.com
-    pwd
-    export RUBY_HEAP_MIN_SLOTS=1000000
-    export RUBY_HEAP_SLOTS_INCREMENT=1000000
-    export RUBY_HEAP_SLOTS_GROWTH_FACTOR=1
-    export RUBY_GC_MALLOC_LIMIT=1000000000
-    export RUBY_HEAP_FREE_MIN=500000
-    . /Volumes/misc/filing/business/destroy\ all\ software\ llc/s3.sh
-    . /Volumes/misc/filing/business/destroy\ all\ software\ llc/braintree.sh
-}
+# function das() {
+#     cd ~/proj/destroyallsoftware.com/destroyallsoftware.com
+#     pwd
+#     export RUBY_HEAP_MIN_SLOTS=1000000
+#     export RUBY_HEAP_SLOTS_INCREMENT=1000000
+#     export RUBY_HEAP_SLOTS_GROWTH_FACTOR=1
+#     export RUBY_GC_MALLOC_LIMIT=1000000000
+#     export RUBY_HEAP_FREE_MIN=500000
+#     . /Volumes/misc/filing/business/destroy\ all\ software\ llc/s3.sh
+#     . /Volumes/misc/filing/business/destroy\ all\ software\ llc/braintree.sh
+# }
 
 activate_virtualenv() {
     if [ -f env/bin/activate ]; then . env/bin/activate;
@@ -115,9 +116,9 @@ function up()
     test $DIR != "/" && echo $DIR/$TARGET
 }
 
-[[ -s "/Users/grb/.rvm/scripts/rvm" ]] && source "/Users/grb/.rvm/scripts/rvm" # Load RVM into a shell session *as a function*
+[[ -s "$HOME/.rvm/scripts/rvm" ]] && source "$HOME/.rvm/scripts/rvm" # Load RVM into a shell session *as a function*
 
 # MacPorts Installer addition on 2010-04-21_at_09:59:50: adding an appropriate PATH variable for use with MacPorts.
-export PATH=/opt/local/bin:/opt/local/sbin:/opt/local/Library/Frameworks/Python.framework/Versions/2.6/bin:/opt/local/lib/mysql5/bin:$PATH
+# export PATH=/opt/local/bin:/opt/local/sbin:/opt/local/Library/Frameworks/Python.framework/Versions/2.6/bin:/opt/local/lib/mysql5/bin:$PATH
 # Finished adapting your PATH environment variable for use with MacPorts.
 

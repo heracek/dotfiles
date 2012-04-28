@@ -42,6 +42,7 @@
 /.localized
 /.macports
 /.mysql_history
+/.npm
 /.pip
 /.psql_history
 /.pypirc
@@ -51,10 +52,12 @@
 /.rubinius_last_error
 /.rvm
 /.sh_history
+/.slocdata
 /.sqlite_history
 /.ssh
 /.ssl
 /.subversion
+/.thinkbuzan
 /.tox
 /.vim-tmp
 /.vim/.netrwhist
@@ -65,10 +68,13 @@
 /.vimrc.backup
 /.vimrc.old
 /.viper
+/.virtualenvs
 /.wireshark
 /.wireshark-etc
 /.zcompdump
 /.Xauthority
+/Applications (Parallels)
+/Applications
 /Desktop
 /Documents
 /Downloads
@@ -78,15 +84,19 @@
 !/Library/AppleScripts
 /Movies
 /Music
+/My Cubby
 /Pictures
 /Public
 /Sites
+/bin/mvim
+/bin/repo
 /bin/rvm
 /bin/rvm-auto-ruby
 /bin/rvm-exec
 /bin/rvm-prompt
 /bin/rvm-shell
 /bin/rvmsudo
+/bin/subl
 /blog
 /desktop_temp
 /doc

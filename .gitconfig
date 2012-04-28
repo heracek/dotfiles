@@ -1,11 +1,16 @@
 [user]
-    name = Gary Bernhardt
-    email = gary.bernhardt@gmail.com
-[diff]
+    name = Tomáš Horáček
+    email = tomas.horacek@gmail.com
 [color]
     ui = auto
+[core]
+    editor = vim
+[github]
+    user = heracek
 [alias]
     st = status
+#    l = log --graph --pretty=format:'%Cred%h%Creset -%C(yellow)%d%Creset %s %Cgreen(%cr) %C(bold blue)<%an>%Creset' --abbrev-commit --date=relative
+#    la = log --graph --pretty=format:'%Cred%h%Creset -%C(yellow)%d%Creset %s %Cgreen(%cr) %C(bold blue)<%an>%Creset' --abbrev-commit --date=relative --all
     ci = commit
     co = checkout
     di = diff

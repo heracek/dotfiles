@@ -1,3 +1,11 @@
+# Path to your oh-my-zsh configuration.
+ZSH=$HOME/.oh-my-zsh
+CASE_SENSITIVE="true"
+DISABLE_AUTO_TITLE="true"
+source $ZSH/oh-my-zsh.sh
+unsetopt correct_all
+
+
 setopt promptsubst
 autoload -U promptinit
 promptinit
@@ -7,16 +15,17 @@ autoload -U compinit
 compinit
 
 # Add paths that should have been there by default
-export PATH=/usr/local/sbin:/usr/local/bin:${PATH}
+export PATH=/usr/local/sbin:/usr/local/bin:/usr/local/share/python:${PATH}
 export PATH="$HOME/bin:$PATH"
 export PATH="$PATH:~/.gem/ruby/1.8/bin"
 
 # Add postgres to the path
-export PATH=$PATH:/usr/local/pgsql/bin
-export PATH=$PATH:/Library/PostgreSQL/8.3/bin
+#export PATH=$PATH:/usr/local/pgsql/bin
+#export PATH=$PATH:/Library/PostgreSQL/8.3/bin
 
 # Unbreak broken, non-colored terminal
-export TERM='xterm-color'
+#export TERM='xterm-color'
+export TERM="screen-256color"
 alias ls='ls -G'
 alias ll='ls -lG'
 alias la='ls -lGA'
@@ -39,7 +48,7 @@ zle -N edit-command-line
 bindkey '\C-x\C-e' edit-command-line
 
 # Unbreak Python's error-prone .pyc file generation
-export PYTHONDONTWRITEBYTECODE=1
+#export PYTHONDONTWRITEBYTECODE=1
 
 export WORDCHARS='*?[]~&;!$%^<>'
 
@@ -122,3 +131,4 @@ function up()
 # export PATH=/opt/local/bin:/opt/local/sbin:/opt/local/Library/Frameworks/Python.framework/Versions/2.6/bin:/opt/local/lib/mysql5/bin:$PATH
 # Finished adapting your PATH environment variable for use with MacPorts.
 
+source /usr/local/share/python/virtualenvwrapper.sh

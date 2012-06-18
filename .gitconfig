@@ -5,6 +5,7 @@
     ui = auto
 [core]
     editor = vim
+    excludesfile = /Users/heracek/.gitignore_global
 [github]
     user = heracek
 [alias]
@@ -35,7 +36,21 @@
     b = branch
     ds = diff --stat=160,120
     dh1 = diff HEAD~1
+    switch = !legit switch \"$@\"
+    branches = !legit branches
+    sprout = !legit sprout \"$@\"
+    unpublish = !legit unpublish \"$@\"
+    harvest = !legit harvest \"$@\"
+    sync = !legit sync \"$@\"
+    publish = !legit publish \"$@\"
+    graft = !legit graft \"$@\"
 
 [merge]
     tool = vimdiff
 
+[difftool "sourcetree"]
+    cmd = opendiff \"$LOCAL\" \"$REMOTE\"
+    path = 
+[mergetool "sourcetree"]
+    cmd = /Applications/SourceTree.app/Contents/Resources/opendiff-w.sh \"$LOCAL\" \"$REMOTE\" -ancestor \"$BASE\" -merge \"$MERGED\"
+    trustExitCode = true

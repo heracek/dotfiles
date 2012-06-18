@@ -10,7 +10,10 @@
 /.bzr.log
 /.cache
 /.certs
+/.composer
+/.config
 /.cups
+/.dbshell
 /.dropbox
 /.dvdcss
 /.ec2
@@ -26,6 +29,7 @@
 /.gem
 /.getmail/gmail.log
 /.getmail/oldmail-pop.gmail.com-995-gary.bernhardt@gmail.com
+/.gitk
 /.gnupg
 /.god
 /.heroku
@@ -38,6 +42,7 @@
 /.ipython
 /.irb-history
 /.irb_history
+/.keychain
 /.lesshst
 /.localized
 /.macports
@@ -88,6 +93,7 @@
 /Pictures
 /Public
 /Sites
+/SparkleShare
 /bin/mvim
 /bin/repo
 /bin/rvm

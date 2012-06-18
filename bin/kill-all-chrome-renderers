@@ -1,0 +1,6 @@
+#!/bin/sh
+
+for X in `ps x | grep "Google Chrome Helper --type=renderer" |grep -v -- "--extension-process" | grep -v -- "grep" | awk {'print $1'}`; do
+    kill $X
+done
+

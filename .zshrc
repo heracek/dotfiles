@@ -23,6 +23,10 @@ export PATH="$PATH:~/.gem/ruby/1.8/bin"
 #export PATH=$PATH:/usr/local/pgsql/bin
 #export PATH=$PATH:/Library/PostgreSQL/8.3/bin
 
+# UTF-8
+export LC_ALL=en_US.UTF-8
+export LANG=en_US.UTF-8
+
 # Unbreak broken, non-colored terminal
 #export TERM='xterm-color'
 export TERM="screen-256color"
@@ -131,4 +135,4 @@ function up()
 # export PATH=/opt/local/bin:/opt/local/sbin:/opt/local/Library/Frameworks/Python.framework/Versions/2.6/bin:/opt/local/lib/mysql5/bin:$PATH
 # Finished adapting your PATH environment variable for use with MacPorts.
 
-source /usr/local/share/python/virtualenvwrapper.sh
+source ~/.zshrc.virtualenvwrapper 

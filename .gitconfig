@@ -18,6 +18,7 @@
     dc = diff --cached
     amend = commit --amend
     aa = add --all
+    board = "!f() { php -d display_errors=0 ~/Documents/work/repos/Gitboard/gitboard.php $@; }; f"
     head = !git l -1
     h = !git head
     hp = "!source ~/.githelpers && show_git_head"

@@ -14,6 +14,7 @@
 /.config
 /.cups
 /.dbshell
+/.dbus-keyrings
 /.dropbox
 /.dvdcss
 /.ec2
@@ -47,7 +48,9 @@
 /.localized
 /.macports
 /.mediatomb
+/.mplayer
 /.mysql_history
+/.netrc
 /.npm
 /.pip
 /.psql_history
@@ -67,6 +70,7 @@
 /.tox
 /.vim-tmp
 /.vim/.netrwhist
+/.vim/doc
 /.vim-fuf-data
 /.vimfuzzyfinder
 /.viminfo

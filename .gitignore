@@ -35,11 +35,13 @@
 /.god
 /.heroku
 /.hg.cvsps
+/.hgignore_global
 /.hgk
 /.history
 /.history.436tlA
 /.hoe_template
 /.hudson
+/.idlerc
 /.ipython
 /.irb-history
 /.irb_history
@@ -48,6 +50,7 @@
 /.localized
 /.macports
 /.mediatomb
+/.middleman
 /.mplayer
 /.mysql_history
 /.netrc

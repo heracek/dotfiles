@@ -2,9 +2,10 @@
 ZSH=$HOME/.oh-my-zsh
 CASE_SENSITIVE="true"
 DISABLE_AUTO_TITLE="true"
+DISABLE_CORRECTION="true"
 source $ZSH/oh-my-zsh.sh
 unsetopt correct_all
-
+unsetopt correct
 
 setopt promptsubst
 autoload -U promptinit
@@ -15,9 +16,9 @@ autoload -U compinit
 compinit
 
 # Add paths that should have been there by default
-export PATH=/usr/local/sbin:/usr/local/bin:/usr/local/share/python:${PATH}
+export PATH=/usr/local/sbin:/usr/local/bin:/usr/local/share/python:/usr/local/share/npm/bin:${PATH}
 export PATH="$HOME/bin:$PATH"
-export PATH="$PATH:~/.gem/ruby/1.8/bin"
+# export PATH="$PATH:~/.gem/ruby/1.8/bin"
 
 # Add postgres to the path
 #export PATH=$PATH:/usr/local/pgsql/bin
@@ -72,6 +73,8 @@ alias gx="gitx"
 alias gxa="gitx --all"
 function mcd() { mkdir -p $1 && cd $1 }
 alias :q="echo YOU FAIL"
+alias cdc="cd ~/Documents/work/code/"
+alias myip="ipconfig getifaddr en1"
 # alias misc="cd /Volumes/misc"
 function cdf() { cd *$1*/ } # stolen from @topfunky
 # function das() {
@@ -129,10 +132,12 @@ function up()
     test $DIR != "/" && echo $DIR/$TARGET
 }
 
-[[ -s "$HOME/.rvm/scripts/rvm" ]] && source "$HOME/.rvm/scripts/rvm" # Load RVM into a shell session *as a function*
-
 # MacPorts Installer addition on 2010-04-21_at_09:59:50: adding an appropriate PATH variable for use with MacPorts.
 # export PATH=/opt/local/bin:/opt/local/sbin:/opt/local/Library/Frameworks/Python.framework/Versions/2.6/bin:/opt/local/lib/mysql5/bin:$PATH
 # Finished adapting your PATH environment variable for use with MacPorts.
 
+[[ -s "$HOME/.nvm/nvm.sh" ]] && . "$HOME/.nvm/nvm.sh"
+
 source ~/.zshrc.virtualenvwrapper 
+
+PATH=$PATH:$HOME/.rvm/bin # Add RVM to PATH for scripting

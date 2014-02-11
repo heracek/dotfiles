@@ -60,3 +60,7 @@
 [push]
     default = simple
 
+[diff "localizablestrings"]
+    textconv = "iconv -f utf-16 -t utf-8"
+[diff "bplist"]
+    textconv = "plutil -convert xml1 -o - - <"

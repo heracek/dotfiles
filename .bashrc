@@ -4,7 +4,6 @@
 export PATH=/usr/local/bin:/usr/local/share/python:${PATH}
 export PATH="~/bin:$PATH"
 export PATH="$PATH:~/.gem/ruby/1.8/bin"
-export PATH=$PATH:$HOME/.rvm/bin # Add RVM to PATH for scripting
 
 # Add postgres to the path
 #export PATH=$PATH:/usr/local/pgsql/bin
@@ -77,3 +76,4 @@ python_module_dir () {
 source ~/bin/git-completion.bash
 source /usr/local/share/python/virtualenvwrapper.sh
 
+PATH=$PATH:$HOME/.rvm/bin # Add RVM to PATH for scripting
